@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  user-select: none;
+}
+
+body {
+  background-color: #666;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+/* Banner Styles */
+#banner {
+  position: relative;
+  overflow: hidden;
+  background-color: #f40a14;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.layer {
+  width: 320px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#bannerClick {
+  position: absolute;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+
+#border{border: 1px solid #ccc}
+#green{
+  background-color: #18312a;
+}
