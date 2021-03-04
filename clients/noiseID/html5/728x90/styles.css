@@ -88,8 +88,8 @@ img {
 #default_exit{
   top:0px;
   left:0px;
-  width: 90px;
-  height: 728px;
+  width: 728px;
+  height: 90px;
 }
 
 
@@ -159,7 +159,7 @@ img {
 #cta {
 	width: 191px;
 	height: 50px;
-	border-radius: 18px;
+	border-radius: 25px;
 	top: 20px;
 	left: 140px;
 	font-size: 17px;

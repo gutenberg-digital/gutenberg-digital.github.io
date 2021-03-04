@@ -35,7 +35,7 @@ function animate(){
       .to('#logo', 0.5, { autoAlpha: 0, ease: Power1.easeIn }, "+=1")
       .to('#logo', 0, { scale: 0.7, x: -70, y: -175, ease: Power1.easeInOut })
       //  Adjust logo colours so as not to lose logo against background
-      .to(iamsLogoPaths, 0, { fill: '#F2F2F2' })
+      // .to(iamsLogoPaths, 0, { fill: '#F2F2F2' })
       .to('#bg', 1, { autoAlpha: 1 })
       .to('#logo', 0.5, { autoAlpha: 1 }, "-=0.5")
       //  Target looking for dog nose
