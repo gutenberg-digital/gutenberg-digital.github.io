@@ -142,9 +142,10 @@ img {
 	height: auto;
 	top: 98px;
 	left: 29px;
+	font-family: "GothamRounded-Medium";
 	font-size: 28px;
 	line-height: 28px;
-	letter-spacing: -0.06rem;
+	letter-spacing: -0.09rem;
 	text-transform: uppercase;
 }
 
