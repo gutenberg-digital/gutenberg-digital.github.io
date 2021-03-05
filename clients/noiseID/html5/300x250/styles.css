@@ -140,10 +140,10 @@ img {
 .text {
 	width: 135px;
 	height: auto;
-	top: 65px;
+	top: 75px;
 	left: 17px;
-	font-size: 20px;
-	line-height: 20px;
+	font-size: 19px;
+	line-height: 19px;
 	letter-spacing: -0.06rem;
 	text-transform: uppercase;
 }

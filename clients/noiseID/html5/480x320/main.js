@@ -33,7 +33,7 @@ function animate(){
 
     tl.addLabel('start')
       .to('#logo', 0.5, { autoAlpha: 0, ease: Power1.easeIn }, "+=1")
-      .to('#logo', 0, { scale: 0.7, x: -136, y: -100, ease: Power1.easeInOut })
+      .to('#logo', 0, { scale: 0.6, x: -146, y: -93, ease: Power1.easeInOut })
       //  Adjust logo colours so as not to lose logo against background
       .to(iamsLogoPaths, 0, { fill: '#F2F2F2' })
       .to('#bg', 1, { autoAlpha: 1 })
@@ -43,7 +43,7 @@ function animate(){
       .to('#text_container', 0.5, { x: 0, ease: Power1.easeOut }, "+=0")
       //  Revert back to original logo colours
       .to(iamsLogoPaths, 0.75, { fill: '#878787' }, '-=0.75')
-      .to(['#bg', '#target'], 0.75, { x: "+=85", ease: Power1.easeInOut }, '-=0.75')
+      .to(['#bg', '#target'], 0.75, { x: "+=80", ease: Power1.easeInOut }, '-=0.75')
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 0, y: -5, ease: Power1.easeInOut }, 0.1, "+=2.5")
       .staggerTo('#t2 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)

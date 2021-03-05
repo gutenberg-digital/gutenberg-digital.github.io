@@ -126,10 +126,10 @@ img {
 .text {
 	width: 250px;
 	height: auto;
-	top: 3px;
+	top: 2.5px;
 	left: 93px;
-	font-size: 11px;
-	line-height: 11px;
+	font-size: 10px;
+	line-height: 10px;
 	letter-spacing: -0.06rem;
 	text-transform: uppercase;
 }

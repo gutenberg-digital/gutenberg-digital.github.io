@@ -33,17 +33,18 @@ function animate(){
 
     tl.addLabel('start')
       .to('#logo', 0.5, { autoAlpha: 0, ease: Power1.easeIn }, "+=1")
-      .to('#logo', 0, { scale: 0.7, x: -88, y: -82, ease: Power1.easeInOut })
+      .to('#logo', 0, { scale: 0.7, x: -88, y: -72, ease: Power1.easeInOut })
       //  Adjust logo colours so as not to lose logo against background
       .to(iamsLogoPaths, 0, { fill: '#F2F2F2' })
       .to('#bg', 1, { autoAlpha: 1 })
       .to('#logo', 0.5, { autoAlpha: 1 }, "-=0.5")
       //  Target looking for dog nose
-      .to('#target', 0.67, { scale: 1, x: 0, ease: Power4.easeOut }, "-=0.5")
+      .to('#target', 0.67, { scale: 1, x: 5, y: -5, ease: Power4.easeOut }, "-=0.5")
       .to('#text_container', 0.5, { x: 0, ease: Power1.easeOut }, "+=0")
       //  Revert back to original logo colours
       .to(iamsLogoPaths, 0.75, { fill: '#878787' }, '-=0.75')
-      .to(['#bg', '#target'], 0.75, { x: "+=26", ease: Power1.easeInOut }, '-=0.75')
+      .to(['#bg'], 0.75, { x: "-=10", y: "-=50", height: "+=50", width: "+=50", ease: Power1.easeInOut }, '-=0.75')
+      .to(['#target'], 0.75, { x: "+=37", y: "-=15", ease: Power1.easeInOut }, '-=0.75')
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 0, y: -5, ease: Power1.easeInOut }, 0.1, "+=2.5")
       .staggerTo('#t2 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)

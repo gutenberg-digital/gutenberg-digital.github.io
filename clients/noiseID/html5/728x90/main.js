@@ -37,13 +37,13 @@ function animate(){
       //  Adjust logo colours so as not to lose logo against background
       .to(iamsLogoPaths, 0, { fill: '#F2F2F2' })
       .to('#bg', 1, { autoAlpha: 1 })
-      .to('#logo', 0.5, { autoAlpha: 1 }, "-=0.5")
-      .to(['#bg', '#target'], 0.5, { y: "-=66", ease: Power1.easeInOut }, '-=0.75')
+      .to('#logo', 0.5, { autoAlpha: 1, delay: 1 }, "-=0.5")
+      .to(['#bg', '#target'], 0.75, { y: "-=66", ease: Power1.easeInOut }, '-=0.75')
       //  Target looking for dog nose
       .to('#target', 0.67, { scale: 1, x: 0, ease: Power4.easeOut }, "-=0.5")
       .to('#text_container', 0.5, { x: 0, ease: Power1.easeOut }, "+=0")
-      .to(['#bg'], 0.5, { x: "+=450", y: "+=65", height: "-=90", width: "-=364", ease: Power1.easeInOut }, '-=0.5')
-      .to(['#target'], 0.5, { x: "+=240", y: "+=9", scale: 0.6, ease: Power1.easeInOut }, '-=0.5')
+      .to(['#bg'], 0.75, { x: "+=375", y: "+=65", height: "-=63", width: "-=256", ease: Power1.easeInOut }, '-=0.75')
+      .to(['#target'], 0.75, { x: "+=228", y: "+=26", scale: 0.6, ease: Power1.easeInOut }, '-=0.75')
       //  Revert back to original logo colours
       .to(iamsLogoPaths, 0.75, { fill: '#878787' }, '-=0.75')
       // .to(['#bg', '#target'], 0.75, { y: "-=66", ease: Power1.easeInOut }, '-=0.75')
