@@ -138,9 +138,9 @@ img {
 }
 
 .text {
-	width: 200px;
+	width: 280px;
 	height: auto;
-	top: 90px;
+	top: 98px;
 	left: 29px;
 	font-size: 28px;
 	line-height: 28px;
@@ -155,10 +155,10 @@ img {
 }
 
 #cta {
-	width: 126px;
+	width: 145px;
 	height: 36px;
 	border-radius: 18px;
-	top: 245px;
+	top: 230px;
 	left: 29px;
 	font-size: 12px;
 	line-height: 12px;

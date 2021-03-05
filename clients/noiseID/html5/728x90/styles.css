@@ -143,9 +143,9 @@ img {
 	width: 500px;
 	height: auto;
 	top: 23px;
-	left: 135px;
-	font-size: 23px;
-	line-height: 23px;
+	left: 170px;
+	font-size: 22px;
+	line-height: 22px;
 	letter-spacing: -0.06rem;
 	text-transform: uppercase;
 }
@@ -161,10 +161,10 @@ img {
 	height: 50px;
 	border-radius: 25px;
 	top: 20px;
-	left: 140px;
+	left: 170px;
 	font-size: 17px;
 	line-height: 17px;
-	letter-spacing: -0.03rem;
+	letter-spacing: -0.09rem;
 	text-align: center;
 	text-transform: uppercase;
 	transform: translateY(5px);

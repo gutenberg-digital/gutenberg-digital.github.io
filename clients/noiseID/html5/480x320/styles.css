@@ -115,8 +115,8 @@ img {
 }
 
 #logo {
-	width: 208px;
-	height: 79px;
+	width: 207px;
+	height: 78px;
 	top: 107px;
 	left: 136px;
 }
@@ -140,10 +140,10 @@ img {
 .text {
 	width: 200px;
 	height: auto;
-	top: 95px;
+	top: 91px;
 	left: 29px;
-	font-size: 27px;
-	line-height: 27px;
+	font-size: 26px;
+	line-height: 26px;
 	letter-spacing: -0.06rem;
 	text-transform: uppercase;
 }
@@ -156,19 +156,19 @@ img {
 
 #cta {
 	width: 150px;
-	height: 40px;
-	border-radius: 18px;
-	top: 255px;
-	left: 29px;
+	height: 42px;
+	border-radius: 25px;
+	top: 245px;
+	left: 31px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: -0.03rem;
+	letter-spacing: -0.06rem;
 	text-align: center;
 	text-transform: uppercase;
 	transform: translateY(5px);
 	border: 2px solid #3B974E;
 	color: #3B974E;
-	padding: 12px 0;
+	padding: 13px 0;
 	font-family: "GothamRounded-Bold";
 }
 
