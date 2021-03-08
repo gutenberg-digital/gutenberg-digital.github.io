@@ -43,10 +43,13 @@ function animate(){
       .to('#text_container', 0.5, { y: -85, ease: Power1.easeOut }, "+=0")
       //  Revert back to original logo colours
       .to(iamsLogoPaths, 0.75, { fill: '#878787' }, '-=0.75')
-      .to(['#bg', '#target'], 0.75, { y: "+=130", x: "+=25", ease: Power1.easeInOut }, '-=0.75')
+      .to(['#bg', '#target'], 0.75, { y: "+=65", x: "+=15", ease: Power1.easeInOut }, '-=0.75')
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 0, y: -5, ease: Power1.easeInOut }, 0.1, "+=2.5")
       .to('#text_container', 0.5, { y: 0, ease: Power1.easeOut }, "+=0.5")
+      //  Revert back to original logo colours
+      .to(iamsLogoPaths, 0.75, { fill: '#878787' }, '-=0.75')
+      .to(['#bg', '#target'], 0.75, { y: "+=65", x: "+=15", ease: Power1.easeInOut }, '-=0.75')
       .staggerTo('#t2 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .to('#cta', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, "+=0.75")
       .to('#cta', 0.25, { scale: 1.025, ease: Power1.easeInOut })
