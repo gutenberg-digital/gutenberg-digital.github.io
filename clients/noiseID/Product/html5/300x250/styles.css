@@ -104,7 +104,6 @@ img {
 
 #bg {
 	transform-origin: top left;
-	transform: matrix(1.4, 0, 0, 1.4, -99, -47);
 }
 
 #lines {
@@ -124,8 +123,8 @@ img {
 #target {
 	width: 52px;
 	height: 52px;
-	top: 97px;
-	left: 156px;
+	top: 93px;
+	left: 181px;
 	transform: scale(10);
 	transform-origin: center;
 }
