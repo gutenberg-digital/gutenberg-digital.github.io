@@ -39,7 +39,7 @@ function animate(){
       .to('#bg', 1, { autoAlpha: 1 })
       .to('#logo', 0.5, { autoAlpha: 1 }, "-=0.5")
       //  Target looking for dog nose
-      .to('#target', 0.67, { scale: 1, x: 0, ease: Power4.easeOut }, "-=0.5")
+      .to('#target', 0.67, { scale: 1, x: 0, ease: Power4.easeOut }, "+=0.5")
       .to('#text_container', 0.5, { y: -65, ease: Power1.easeOut }, "+=0")
       //  Revert back to original logo colours
       .to(iamsLogoPaths, 0.75, { fill: '#878787' }, '-=0.75')
