@@ -121,10 +121,10 @@ img {
 }
 
 #target {
-	width: 52px;
-	height: 52px;
-	top: 99px;
-	left: 154px;
+	width: 65px;
+	height: 65px;
+	top: 93px;
+	left: 149px;
 	transform: scale(10);
 	transform-origin: center;
 }
