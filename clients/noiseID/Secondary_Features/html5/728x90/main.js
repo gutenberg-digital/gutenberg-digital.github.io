@@ -34,7 +34,7 @@ function animate(){
     tl.addLabel('start')
       .to('#logo', 0.5, { autoAlpha: 0, ease: Power1.easeIn }, "+=1")
       .to('#logo', 0, { scale: 0.9, x: -281, y: -0, ease: Power1.easeInOut })
-      .staggerTo(['#logo', '#nose'], 0.5, { autoAlpha: 1 }, 0.25, "+=0")
+      .staggerTo('#logo', 0.5, { autoAlpha: 1 }, 0.25, "+=0")
       .to('#text_container', 0.5, { x: 0, ease: Power1.easeOut }, "+=0")
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 0, y: -5, ease: Power1.easeInOut }, 0.1, "+=2.5")

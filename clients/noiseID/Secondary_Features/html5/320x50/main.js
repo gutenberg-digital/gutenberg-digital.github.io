@@ -32,7 +32,6 @@ function animate(){
     tl.set(["#main_content"], { autoAlpha:1, force3D:true });
 
     tl.addLabel('start')
-      .to('#nose', 0.5, { autoAlpha: 1, ease: Power1.easeInOut })
       .to('#text_container', 0.5, { y: 0, ease: Power1.easeOut }, "+=0")
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 0, y: -5, ease: Power1.easeInOut }, 0.1, "+=2.5")
