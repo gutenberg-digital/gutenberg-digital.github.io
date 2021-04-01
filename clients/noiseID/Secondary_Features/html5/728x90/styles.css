@@ -161,6 +161,7 @@ img {
 
 .phone {
 	width: 61px;
+	height: auto;
 	left: 540px;
 	top: 9px;
 	transform: translateY(100%);
