@@ -159,6 +159,13 @@ img {
 	font-family: "GothamRounded-Bold";
 }
 
+.phone {
+	width: 61px;
+	left: 540px;
+	top: 9px;
+	transform: translateY(100%);
+}
+
 :focus{outline: 0}
 
 ::-moz-focus-inner{border: 0}
