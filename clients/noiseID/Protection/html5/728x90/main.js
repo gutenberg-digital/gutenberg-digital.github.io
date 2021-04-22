@@ -51,11 +51,6 @@ function animate(){
       .staggerTo('#t1 > span', 0.5, { autoAlpha: 0, y: -5, ease: Power1.easeInOut }, 0.1, "+=2.5")
       .staggerTo('#t2 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1)
       .to('#t2', 0.5, { autoAlpha: 0, y: 0, ease: Power1.easeInOut }, "+=2.5")
-      .to('#cta', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, "+=0.75")
-      .to('#cta', 0.25, { scale: 1.025, ease: Power1.easeInOut })
-      .to('#cta', 0.25, { scale: 1, ease: Power1.easeInOut })
-      .to('#cta', 0.25, { scale: 1.025, ease: Power1.easeInOut })
-      .to('#cta', 0.25, { scale: 1, ease: Power1.easeInOut })
 
     tl2.to('#lines line', 3, { x: "+=25", scaleX: 1.25, ease: 'linear' })
        .to('#lines line', 3, { x: "-=50", scaleX: 1, ease: 'linear' })
