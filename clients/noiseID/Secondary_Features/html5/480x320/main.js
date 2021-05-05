@@ -42,11 +42,6 @@ function animate(){
       .to('#phone1', 0.75, { y: 382, ease: Power1.easeInOut }, "-=0.5")
       .to('#phone2', 0.75, { y: 0, ease: Power1.easeInOut })
       .staggerTo('#t2 > span', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, 0.1, "-=0.33")
-      .to('#cta', 0.5, { autoAlpha: 1, y: 0, ease: Power1.easeInOut }, "+=0.75")
-      .to('#cta', 0.25, { scale: 1.025, ease: Power1.easeInOut })
-      .to('#cta', 0.25, { scale: 1, ease: Power1.easeInOut })
-      .to('#cta', 0.25, { scale: 1.025, ease: Power1.easeInOut })
-      .to('#cta', 0.25, { scale: 1, ease: Power1.easeInOut })
 
     tl2.to('#lines line', 3, { x: "+=25", scaleX: 1.25, ease: 'linear' })
        .to('#lines line', 3, { x: "-=50", scaleX: 1, ease: 'linear' })
