@@ -44,8 +44,8 @@
         <div id="background"/>
 
         <div id="imageCont">
-            <img src="image2.jpg" id="image2"/>
-            <img src="image1.jpg" id="image1"/ style="height: 90px !important;">
+          <img src="image1.jpg" id="image1"/>
+          <img src="image2.jpg" id="image2"/>
         </div>
 
         <!-- <div id="lineCont">
@@ -129,12 +129,12 @@
             //
             tl1 = new TimelineMax({repeat:0, repeatDelay: 5.5});
             //
-            tl1.to('#image1', 10,{scale:1});
+            tl1.to('#image2', 10,{scale:1});
             tl1.to('#logo', 0.5,{opacity:1},'-=9');
             tl1.to('#copy1', 1,{opacity:1},'-=7');
             tl1.to('#copy1', 1,{opacity:0},'-=3');
-            tl1.to('#image1', 0.5,{opacity:0},'-=1');
-            tl1.to('#image2', 10,{scale:1},'-=4');
+            tl1.to('#image2', 0.5,{opacity:0},'-=1');
+            tl1.to('#image1', 10,{scale:1},'-=4');
             tl1.to('#copy2', 1,{opacity:1},'-=6');
             tl1.to('#cta', 1,{opacity:1},'-=2');
             //
