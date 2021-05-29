@@ -1,0 +1,145 @@
+body,body *{
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+img{
+	border: 0;
+}
+
+button,div,img,svg,video{
+	position: absolute
+}
+
+.retina {
+  /*    for display on retina screens images created @2x actual dimensions then scaled back by 50%.
+  images are scaled from top left, which effects css when wanting to use other alignment
+  e.g. bottom:0; right:0; also requires transform-origin:bottom right;
+  02/2016 webkit browsers:
+  images including their containers must be block or inline-block.
+  if css display:none or display:inline then transforms fail.
+  */
+  -webkit-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+
+  /* image-rendering: auto; */
+  /*image-rendering: crisp-edges;*/
+}
+
+#main_container{
+	position: absolute;
+	background-color: #fff;
+  border: 1px solid #cbccc8;
+  overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 160px;
+  height: 600px;
+}
+
+#main_content{
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 330px;
+  height: 660px;
+}
+
+#bg1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 160px;
+  height: 600px;
+  background-color: #ebece6;
+}
+
+#bg2{
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 132px;
+  height: 505px;
+  background-color: #970023;
+}
+
+#product_mask{
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 132px;
+  height: 505px;
+  overflow: hidden;
+
+  /* border: 1px solid #000; */
+
+}
+
+#grad{
+  left: -1px;
+}
+
+#products_holder{
+  position: absolute;
+  top: 182px;
+  height: 600px;
+  width: 2000px;
+  /* border: 1px solid #000; */
+}
+
+#product1_holder, #product2_holder, #product3_holder, #product4_holder, #product5_holder, #product6_holder, #product7_holder, #product8_holder{
+  position: relative;
+  display: inline-block;
+  height: 600px; 
+  width: 250px;
+
+  border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+  /* border: 1px solid #f00; */
+}
+
+.productImage{
+  border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+
+#default_exit{
+  top:0px;
+  left:0px;
+  width: 160px;
+  height: 600px;
+}
+
+
+.btn{
+	position: absolute;
+	top:0px;
+	left:0px;
+	cursor: pointer;
+	background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+	z-index: 200;
+}
+
+
+:focus{outline: 0}
+
+::-moz-focus-inner{border: 0}
