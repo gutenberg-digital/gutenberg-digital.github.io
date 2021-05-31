@@ -132,7 +132,7 @@ function animate() {
 
     tl.staggerTo([".prod"], 1, { autoAlpha: 1, stagger: 0.5, ease: Power1.easeInOut }, 1);
 
-    tl.to(["#products_holder"], 11, { x: -880, ease: "none" }, 4);
+    tl.to(["#products_holder"], 11, { x: -878, ease: "none" }, 4);
 
     tl.to(["#cta"], .5, { autoAlpha: 1, ease: Power1.easeInOut }, 4);
 
