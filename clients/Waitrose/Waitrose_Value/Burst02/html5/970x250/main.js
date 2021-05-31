@@ -189,13 +189,21 @@ function animate() {
 
     tl.to(["#products_holder"], 14, { x: -1650, ease: "none" }, .5);
 
-    tl.to(["#product1_holder"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 4);
+    tl.to(["#product1"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 2.75);
 
-    tl.to(["#product2_holder"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 6.5);
+    tl.to(["#product2"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 4.5);
 
-    tl.to(["#product3_holder"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 9);
+    tl.to(["#product3"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 5.75);
 
-    tl.to(["#product4_holder"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 11.5);
+    tl.to(["#product4"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 7);
+
+    tl.to(["#product5"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 8.5);
+
+    tl.to(["#product6"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 10.25);
+
+    tl.to(["#product7"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 11.25);
+
+    tl.to(["#product8"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 12.75);
 
     tl.to(["#cta"], .5, { autoAlpha: 1, ease: Power1.easeInOut }, 4);
 
