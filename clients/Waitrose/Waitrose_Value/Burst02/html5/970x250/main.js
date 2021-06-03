@@ -43,14 +43,14 @@ var prod7Ysize;
 var prod8Xsize;
 var prod8Ysize;
 
-var prod9size;
-var prod9Ysize;
-
-var prod10Xsize;
-var prod10Ysize;
-
-var prod11Xsize;
-var prod11Ysize;
+// var prod9size;
+// var prod9Ysize;
+//
+// var prod10Xsize;
+// var prod10Ysize;
+//
+// var prod11Xsize;
+// var prod11Ysize;
 
 var productsHolderWidth;
 
@@ -91,16 +91,16 @@ function init() {
     prod8Xsize = document.getElementById("product8").offsetWidth / 2;
     prod8Ysize = document.getElementById("product8").offsetHeight / 2;
 
-    prod9Xsize = document.getElementById("product9").offsetWidth / 2;
-    prod9Ysize = document.getElementById("product9").offsetHeight / 2;
+    // prod9Xsize = document.getElementById("product9").offsetWidth / 2;
+    // prod9Ysize = document.getElementById("product9").offsetHeight / 2;
+    //
+    // prod10Xsize = document.getElementById("product10").offsetWidth / 2;
+    // prod10Ysize = document.getElementById("product10").offsetHeight / 2;
+    //
+    // prod11Xsize = document.getElementById("product11").offsetWidth / 2;
+    // prod11Ysize = document.getElementById("product11").offsetHeight / 2;
 
-    prod10Xsize = document.getElementById("product10").offsetWidth / 2;
-    prod10Ysize = document.getElementById("product10").offsetHeight / 2;
-
-    prod11Xsize = document.getElementById("product11").offsetWidth / 2;
-    prod11Ysize = document.getElementById("product11").offsetHeight / 2;
-
-    productsHolderWidth = prod1Xsize + prod2Xsize + prod3Xsize + prod4Xsize + prod5Xsize + prod6Xsize + prod7Xsize + prod8Xsize + prod9Xsize + prod10Xsize + prod11Xsize;
+    productsHolderWidth = prod1Xsize + prod2Xsize + prod3Xsize + prod4Xsize + prod5Xsize + prod6Xsize + prod7Xsize + prod8Xsize;
 
     scrollDistance = (productsHolderWidth) - (bannerWidth + scrollDistance);
 
@@ -162,11 +162,11 @@ function animate() {
 
     tl.set(["#product8_holder"], { width: prod8Xsize, height: prod8Ysize, force3D: true, rotation: .001 });
 
-    tl.set(["#product9_holder"], { width: prod9Xsize, height: prod9Ysize, force3D: true, rotation: .001 });
-
-    tl.set(["#product10_holder"], { width: prod10Xsize, height: prod10Ysize, force3D: true, rotation: .001 });
-
-    tl.set(["#product11_holder"], { width: prod11Xsize, height: prod11Ysize, force3D: true, rotation: .001 });
+    // tl.set(["#product9_holder"], { width: prod9Xsize, height: prod9Ysize, force3D: true, rotation: .001 });
+    //
+    // tl.set(["#product10_holder"], { width: prod10Xsize, height: prod10Ysize, force3D: true, rotation: .001 });
+    //
+    // tl.set(["#product11_holder"], { width: prod11Xsize, height: prod11Ysize, force3D: true, rotation: .001 });
 
     tl.set(["#products_holder"], { width: productsHolderWidth + 3, x: bannerLeftMargin, force3D: true, rotation: .001 });
 
@@ -187,23 +187,23 @@ function animate() {
 
     tl.staggerTo([".prod"], 1, { autoAlpha: 1, stagger: 0.5, ease: Power1.easeInOut }, 1);
 
-    tl.to(["#products_holder"], 14, { x: -1650, ease: "none" }, .5);
+    tl.to(["#products_holder"], 14, { x: -1033, ease: "none" }, .5);
 
-    tl.to(["#product1"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 2.75);
+    tl.to(["#product1"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 4.2);
 
-    tl.to(["#product2"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 4.5);
+    tl.to(["#product2"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 6.7);
 
-    tl.to(["#product3"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 5.75);
+    tl.to(["#product3"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 8.6);
 
-    tl.to(["#product4"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 7);
+    tl.to(["#product4"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 10.3);
 
-    tl.to(["#product5"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 8.5);
+    tl.to(["#product5"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 12.5);
 
-    tl.to(["#product6"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 10.25);
-
-    tl.to(["#product7"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 11.25);
-
-    tl.to(["#product8"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 12.75);
+    // tl.to(["#product6"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 10.25);
+    //
+    // tl.to(["#product7"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 11.25);
+    //
+    // tl.to(["#product8"], 1, { autoAlpha: 0, ease: Power1.easeInOut }, 12.75);
 
     tl.to(["#cta"], .5, { autoAlpha: 1, ease: Power1.easeInOut }, 4);
 
