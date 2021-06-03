@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="ad.size" content="width=300,height=250">
+
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
+
+    <script type="text/javascript">
+      var clickTag = "https://www.waitrose.com/ecom/shop/browse/groceries/fresh_and_chilled/fresh_vegetables/asparagus_and_artichokes";
+    </script>
+
+    <style type="text/css">
+        html, body {width:300px; height:250px; margin: 0;}
+        #main {position:absolute; left:0px; top:0px; width:300px; height:250px; background-color:#e8e8e0; overflow:hidden;}
+
+        #background {background-color: #e8e8e0; position:absolute; left:0px; top:0px; width:300px; height:250px;}
+
+        #imageCont {position:absolute; left:33px; top:0px; width:267px; height:185px; overflow:hidden;}
+        #image1 {position:absolute; left:0px; top:30px; width:277px; height:auto; transform:scale(1.38); transform-origin:50% 50%;}
+        #image2 {position:absolute; left:0px; top:0px; width:277px; height:auto; transform:scale(1.38); transform-origin:50% 50%;}
+
+        #copy1 {position:absolute; left:0px; top:0px; width:300px; height:250px; opacity:0;}
+        #copy2 {position:absolute; left:0px; top:0px; width:300px; height:250px; opacity:0;}
+        #cta {position:absolute; left:0px; top:0px; width:300px; height:250px; opacity:0;}
+
+        #logo {position:absolute; left:0px; top:0px; width:300px; height:250px; opacity:0;}
+
+        #bgExit {position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; cursor: pointer; z-index: 85; background-color: rgba(255,255,255,0);border:1px solid #000000; box-sizing:border-box;  -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+  </style>
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div id="background"/>
+
+        <div id="imageCont">
+          <img src="image2.jpg" id="image2"/>
+          <img src="image1.jpg" id="image1"/>
+        </div>
+
+        <img src="copy1.png" id="copy1"/>
+        <img src="copy2.png" id="copy2"/>
+
+        <img src="cta.png" id="cta"/>
+
+        <img src="logo.png" id="logo"/>
+
+        <div id="bgExit"></div>
+
+    </div>
+
+  <script type="text/javascript">
+    function init() {
+        //
+        var bgExit = document.getElementById("bgExit");
+        //
+        window.addEventListener('DOMContentLoaded', pageLoadedHandler, false);
+
+        function pageLoadedHandler() {
+            enableButtons();
+            startAnimation();
+        }
+
+        function bgExitHandler(e) {
+            window.open(clickTag,'_blank');
+            lastFrame();
+        }
+        //
+        function lastFrame(){
+            //
+            tl1.progress(1, false);
+            TweenMax.killAll();
+        }
+        //
+        function enableButtons(){
+            function is_touch_device() {
+                return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+            }
+            //
+            if (is_touch_device()) {
+                bgExit.addEventListener('touchstart', touchStarted, false);
+                bgExit.addEventListener('touchmove', doNothing, false);
+                bgExit.addEventListener('touchend', touchEnded, false);
+            } else {
+                bgExit.addEventListener('click', bgExitHandler, false);
+            }
+            //
+            var startX, startY, endX, endY, distance;
+            //
+            function touchStarted(e) {
+                distance = 0;
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+                e.preventDefault;
+                }
+            //
+            function touchEnded(e) {
+                endX = e.changedTouches[0].clientX ;
+                endY = e.changedTouches[0].clientY;
+                distance = Math.sqrt(Math.pow((endX-startX),2)+Math.pow((endY-startY),2));
+                if (distance < 5) {
+                    bgExitHandler(e);
+                }
+                e.preventDefault;
+                }
+            //
+            function doNothing(){
+                //
+            }
+        }
+        //
+        var tl1;
+        //
+        function startAnimation(){
+            //
+            tl1 = new TimelineMax({repeat:0, repeatDelay: 5.5});
+            //
+            tl1.to('#image1', 10,{scale:1, y: '-=30'});
+            tl1.to('#logo', 0.5,{opacity:1},'-=9');
+            tl1.to('#copy1', 1,{opacity:1},'-=7');
+            tl1.to('#copy1', 1,{opacity:0},'-=3');
+            tl1.to('#image1', 0.5,{opacity:0},'-=1');
+            tl1.to('#image2', 10,{scale:1},'-=4');
+            tl1.to('#copy2', 1,{opacity:1},'-=6');
+            tl1.to('#cta', 1,{opacity:1},'-=2');
+            //
+        }
+    //
+    };                // end init(); !!!!
+    //
+      //
+      //
+    init();
+    //
+  </script>
+</body>
+
+</html>
