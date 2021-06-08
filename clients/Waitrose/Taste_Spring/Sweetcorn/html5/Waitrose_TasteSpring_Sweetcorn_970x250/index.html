@@ -19,8 +19,8 @@
         #background {background-color: #e8e8e0; position:absolute; left:0px; top:0px; width:970px; height:250px;}
 
         #imageCont {position:absolute; left:0px; top:0px; width:754px; height:212px; overflow:hidden;}
-        #image1 {position:absolute; left:0px; top:0px; width:754px; height:auto; transform:scale(1.38); transform-origin:50% 50%;}
-        #image2 {position:absolute; left:0px; top:0px; width:754px; height:auto; transform:scale(1.38); transform-origin:50% 50%;}
+        #image1 {position:absolute; left:0px; top:25px; width:754px; height:auto; transform:scale(1.38); transform-origin:50% 50%;}
+        #image2 {position:absolute; left:0px; top:25px; width:754px; height:auto; transform:scale(1.38); transform-origin:50% 50%;}
 
         #copy1 {position:absolute; left:0px; top:0px; width:970px; height:250px; opacity:0;}
         #copy2 {position:absolute; left:0px; top:0px; width:970px; height:250px; opacity:0;}
@@ -122,12 +122,12 @@
             //
             tl1 = new TimelineMax({repeat:0, repeatDelay: 5.5});
             //
-            tl1.to('#image1', 10,{scale:1, y:'-=70'});
+            tl1.to('#image1', 10,{scale:1, y:'-=25'});
             tl1.to('#logo', 0.5,{opacity:1},'-=9');
             tl1.to('#copy1', 1,{opacity:1},'-=7');
             tl1.to('#copy1', 1,{opacity:0},'-=3');
             tl1.to('#image1', 0.5,{opacity:0},'-=1');
-            tl1.to('#image2', 10,{scale:1},'-=4');
+            tl1.to('#image2', 10,{scale:1, y:'-=25'},'-=4');
             tl1.to('#copy2', 1,{opacity:1},'-=6');
             tl1.to('#cta', 1,{opacity:1},'-=2');
             //
