@@ -27,12 +27,7 @@ function animate() {
   tl.set(["#bg_holder"], { transformOrigin: "50% 50%", scale: 1 });
   tl.set(["#txtBox", "#txt1", "#cta"], { autoAlpha: 0 });
 
-  tl.to(
-    ["#bg_holder"],
-    10,
-    { scale: 1.17, x: "-=30", ease: Power1.easeOut },
-    "0"
-  );
+  tl.to(["#bg_holder"], 10, { scale: 1.17, ease: Power1.easeOut }, "0");
 
   tl.to(["#txtBox"], 1, { autoAlpha: 1, ease: Power1.easeOut }, "-=9.5");
 
