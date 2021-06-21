@@ -35,7 +35,7 @@ function animate() {
 
   tl.to(["#text_holder"], 1, { height: "+=25", ease: Power1.easeOut }, "-=5.5");
 
-  tl.to(["#cta"], 1, { autoAlpha: 1, ease: Power1.easeOut }, "-=5");
+  tl.to(["#cta"], 1, { autoAlpha: 1, ease: Power1.easeOut }, "-=4.5");
 }
 
 // End timer
