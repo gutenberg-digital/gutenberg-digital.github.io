@@ -138,3 +138,10 @@ video {
   left: 24px;
   top: 85px;
 }
+
+#arrow {
+  height: 10px;
+  width: 6px;
+  left: 111px;
+  top: 89px;
+}

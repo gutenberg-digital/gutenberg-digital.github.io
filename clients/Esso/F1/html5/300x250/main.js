@@ -25,7 +25,7 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.set(["#bg_holder"], { transformOrigin: "50% 50%", scale: 1 });
-  tl.set(["#txtBox", "#txt1", "#cta"], { autoAlpha: 0 });
+  tl.set(["#txtBox", "#txt1", "#cta", "#arrow"], { autoAlpha: 0 });
 
   tl.to(["#bg_holder"], 10, { scale: 1.17, ease: Power1.easeOut }, "0");
 
@@ -35,7 +35,7 @@ function animate() {
 
   tl.to(["#text_holder"], 1, { height: "+=25", ease: Power1.easeOut }, "-=5.5");
 
-  tl.to(["#cta"], 1, { autoAlpha: 1, ease: Power1.easeOut }, "-=4.5");
+  tl.to(["#cta", "#arrow"], 1, { autoAlpha: 1, ease: Power1.easeOut }, "-=4.5");
 }
 
 // End timer
